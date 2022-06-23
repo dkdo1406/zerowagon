@@ -16,7 +16,7 @@ struct HomeView: View {
     @State var selectedCapacity = "210"
     @State var amount = ""
     @State var price = ""
-    @State var EA = 0.0
+    @State var EA = 0
     @State var weight = 0
     
     var body: some View {
@@ -59,31 +59,37 @@ struct HomeView: View {
             }
             
             //보여줄 것 : 총 중량, 가격, 딜 정보
-            
             HStack {
                 Text("총 중량 :")
                 Text("\(weight)")
                 Text("ml")
             }
             HStack {
-                Text("가격")
+                Text("개당 가격")
                 Text("\(EA)")
                 Text("원")
             }
             Text("딜정보")
-            
         }
-        
     }
     
     func pricePerPiece() {
-        EA = (Double(price) ?? 0) / (Double(selectedCapacity) ?? 0)
+        guard let priceData = Int(price) else {
+            return
+        }
+        guard let CapacityData = Int(selectedCapacity) else {
+            return
+        }
+        EA = priceData / CapacityData
     }
     
     func totalWeight() {
         weight = (Int(selectedCapacity) ?? 0) * (Int(amount) ?? 0)
     }
+
 }
+
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
