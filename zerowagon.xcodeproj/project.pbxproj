@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04E523E28648F7700D20787 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E523D28648F7700D20787 /* HomeView.swift */; };
 		E0FF800B2829422B00D85301 /* zerowagonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF800A2829422B00D85301 /* zerowagonApp.swift */; };
 		E0FF800D2829422B00D85301 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF800C2829422B00D85301 /* ContentView.swift */; };
 		E0FF800F2829422C00D85301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FF800E2829422C00D85301 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E04E523D28648F7700D20787 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E0FF80072829422B00D85301 /* zerowagon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zerowagon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FF800A2829422B00D85301 /* zerowagonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zerowagonApp.swift; sourceTree = "<group>"; };
 		E0FF800C2829422B00D85301 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E04E523B28648EFE00D20787 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				E04E523D28648F7700D20787 /* HomeView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		E04E523C28648F1700D20787 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E0FF7FFE2829422B00D85301 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,8 @@
 		E0FF80092829422B00D85301 /* zerowagon */ = {
 			isa = PBXGroup;
 			children = (
+				E04E523C28648F1700D20787 /* Model */,
+				E04E523B28648EFE00D20787 /* VIew */,
 				E0FF800A2829422B00D85301 /* zerowagonApp.swift */,
 				E0FF800C2829422B00D85301 /* ContentView.swift */,
 				E0FF800E2829422C00D85301 /* Assets.xcassets */,
@@ -266,6 +285,7 @@
 				E0FF80142829422C00D85301 /* Persistence.swift in Sources */,
 				E0FF800D2829422B00D85301 /* ContentView.swift in Sources */,
 				E0FF80172829422C00D85301 /* zerowagon.xcdatamodeld in Sources */,
+				E04E523E28648F7700D20787 /* HomeView.swift in Sources */,
 				E0FF800B2829422B00D85301 /* zerowagonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
