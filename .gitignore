@@ -106,3 +106,5 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/cocoapods,xcode,swift
+zerowagon/Assets.xcassets/AppIcon.appiconset/Contents.json
+zerowagon.xcodeproj/project.xcworkspace/xcuserdata/hyeongjung.xcuserdatad/UserInterfaceState.xcuserstate
